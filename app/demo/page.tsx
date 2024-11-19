@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { Separator } from "@/components/ui/separator";
 import {
   Home,
   Settings,
@@ -16,140 +17,52 @@ export default function ComplexLayout() {
   return (
     <div className="flex h-screen bg-background text-foreground">
       {/* Main Sidebar */}
-      <div className="w-16 bg-muted flex flex-col items-center py-4 space-y-4">
-        <Button variant="ghost" size="icon">
-          <Home className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <Settings className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <Mail className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <FileText className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <Home className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <Settings className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <Mail className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <FileText className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <Home className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <Settings className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <Mail className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <FileText className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <Home className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <Settings className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <Mail className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <FileText className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <Home className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <Settings className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <Mail className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <FileText className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <Home className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <Settings className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <Mail className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <FileText className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <Home className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <Settings className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <Mail className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <FileText className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <Home className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <Settings className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <Mail className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <FileText className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <Home className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <Settings className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <Mail className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <FileText className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <Home className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <Settings className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <Mail className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <FileText className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <Home className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <Settings className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <Mail className="h-6 w-6" />
-        </Button>
-        <Button variant="ghost" size="icon">
-          <FileText className="h-6 w-6" />
-        </Button>
-      </div>
+      <ScrollArea className="w-16 bg-muted flex-shrink-0">
+        <div className="flex flex-col items-center py-4 space-y-4">
+          <Button variant="ghost" size="icon">
+            <Home className="h-6 w-6" />
+          </Button>
+          <Button variant="ghost" size="icon">
+            <Settings className="h-6 w-6" />
+          </Button>
+          <Button variant="ghost" size="icon">
+            <Mail className="h-6 w-6" />
+          </Button>
+          <Button variant="ghost" size="icon">
+            <FileText className="h-6 w-6" />
+          </Button>
+          <Button variant="ghost" size="icon">
+            <Search className="h-6 w-6" />
+          </Button>
+          <Button variant="ghost" size="icon">
+            <Plus className="h-6 w-6" />
+          </Button>
+          <Button variant="ghost" size="icon">
+            <Send className="h-6 w-6" />
+          </Button>
+          <Button variant="ghost" size="icon">
+            <Home className="h-6 w-6" />
+          </Button>
+          <Button variant="ghost" size="icon">
+            <Settings className="h-6 w-6" />
+          </Button>
+          <Button variant="ghost" size="icon">
+            <Mail className="h-6 w-6" />
+          </Button>
+          <Button variant="ghost" size="icon">
+            <FileText className="h-6 w-6" />
+          </Button>
+          <Button variant="ghost" size="icon">
+            <Search className="h-6 w-6" />
+          </Button>
+          <Button variant="ghost" size="icon">
+            <Plus className="h-6 w-6" />
+          </Button>
+          <Button variant="ghost" size="icon">
+            <Send className="h-6 w-6" />
+          </Button>
+        </div>
+      </ScrollArea>
 
       {/* Main Content Area */}
       <div className="flex-1 flex flex-col">
@@ -161,217 +74,50 @@ export default function ComplexLayout() {
         {/* App Content Area */}
         <div className="flex-1 flex overflow-hidden">
           {/* App Sidebar */}
-          <div className="w-64 bg-muted p-4 overflow-y-auto">
-            <h2 className="text-lg font-semibold mb-4">App Sidebar</h2>
-            <nav className="space-y-2">
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 1
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 2
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 3
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 1
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 2
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 3
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 1
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 2
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 3
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 1
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 2
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 3
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 1
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 2
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 3
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 1
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 2
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 3
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 1
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 2
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 3
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 1
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 2
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 3
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 1
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 2
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 3
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 1
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 2
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 3
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 1
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 2
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 3
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 1
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 2
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 3
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 1
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 2
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 3
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 1
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 2
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 3
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 1
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 2
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 3
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 1
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 2
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 3
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 1
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 2
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 3
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 1
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 2
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 3
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 1
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 2
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 3
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 1
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 2
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 3
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 1
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 2
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 3
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 1
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 2
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 3
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 1
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 2
-              </a>
-              <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
-                Link 3
-              </a>
-            </nav>
+          <div className="w-64 bg-muted flex flex-col">
+            <div className="p-4">
+              <h2 className="text-lg font-semibold">App Sidebar</h2>
+            </div>
+            <ScrollArea className="flex-1">
+              <nav className="space-y-2 p-4">
+                <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
+                  Dashboard
+                </a>
+                <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
+                  Projects
+                </a>
+                <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
+                  Tasks
+                </a>
+                <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
+                  Calendar
+                </a>
+                <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
+                  Documents
+                </a>
+                <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
+                  Reports
+                </a>
+                <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
+                  Analytics
+                </a>
+                <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
+                  Team
+                </a>
+                <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
+                  Messages
+                </a>
+                <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
+                  Settings
+                </a>
+                <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
+                  Help & Support
+                </a>
+                <a href="#" className="block py-2 px-4 rounded hover:bg-accent">
+                  Integrations
+                </a>
+              </nav>
+            </ScrollArea>
           </div>
 
           {/* Content Pane */}
@@ -415,7 +161,7 @@ export default function ComplexLayout() {
                 <div className="bg-card p-4 rounded-lg shadow">
                   <h3 className="text-lg font-semibold mb-2">Data Item 2</h3>
                   <p>
-                    Here&apos;s another data item with different content. The
+                    Here&aspo;s another data item with different content. The
                     scrolling is contained within this area.
                   </p>
                 </div>
@@ -436,7 +182,7 @@ export default function ComplexLayout() {
                 <div className="bg-card p-4 rounded-lg shadow">
                   <h3 className="text-lg font-semibold mb-2">Data Item 2</h3>
                   <p>
-                    Here&apos;s another data item with different content. The
+                    Here&aspo;s another data item with different content. The
                     scrolling is contained within this area.
                   </p>
                 </div>
@@ -457,7 +203,7 @@ export default function ComplexLayout() {
                 <div className="bg-card p-4 rounded-lg shadow">
                   <h3 className="text-lg font-semibold mb-2">Data Item 2</h3>
                   <p>
-                    Here&apos;s another data item with different content. The
+                    Here&aspo;s another data item with different content. The
                     scrolling is contained within this area.
                   </p>
                 </div>
@@ -478,7 +224,7 @@ export default function ComplexLayout() {
                 <div className="bg-card p-4 rounded-lg shadow">
                   <h3 className="text-lg font-semibold mb-2">Data Item 2</h3>
                   <p>
-                    Here&apos;s another data item with different content. The
+                    Here&aspo;s another data item with different content. The
                     scrolling is contained within this area.
                   </p>
                 </div>
@@ -499,7 +245,301 @@ export default function ComplexLayout() {
                 <div className="bg-card p-4 rounded-lg shadow">
                   <h3 className="text-lg font-semibold mb-2">Data Item 2</h3>
                   <p>
-                    Here&apos;s another data item with different content. The
+                    Here&aspo;s another data item with different content. The
+                    scrolling is contained within this area.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 3</h3>
+                  <p>
+                    And one more data item to demonstrate the scrolling
+                    behavior.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 1</h3>
+                  <p>
+                    This is some sample content for data item 1. It can be quite
+                    long and will scroll within the content area.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 2</h3>
+                  <p>
+                    Here&aspo;s another data item with different content. The
+                    scrolling is contained within this area.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 3</h3>
+                  <p>
+                    And one more data item to demonstrate the scrolling
+                    behavior.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 1</h3>
+                  <p>
+                    This is some sample content for data item 1. It can be quite
+                    long and will scroll within the content area.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 2</h3>
+                  <p>
+                    Here&aspo;s another data item with different content. The
+                    scrolling is contained within this area.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 3</h3>
+                  <p>
+                    And one more data item to demonstrate the scrolling
+                    behavior.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 1</h3>
+                  <p>
+                    This is some sample content for data item 1. It can be quite
+                    long and will scroll within the content area.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 2</h3>
+                  <p>
+                    Here&aspo;s another data item with different content. The
+                    scrolling is contained within this area.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 3</h3>
+                  <p>
+                    And one more data item to demonstrate the scrolling
+                    behavior.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 1</h3>
+                  <p>
+                    This is some sample content for data item 1. It can be quite
+                    long and will scroll within the content area.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 2</h3>
+                  <p>
+                    Here&aspo;s another data item with different content. The
+                    scrolling is contained within this area.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 3</h3>
+                  <p>
+                    And one more data item to demonstrate the scrolling
+                    behavior.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 1</h3>
+                  <p>
+                    This is some sample content for data item 1. It can be quite
+                    long and will scroll within the content area.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 2</h3>
+                  <p>
+                    Here&aspo;s another data item with different content. The
+                    scrolling is contained within this area.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 3</h3>
+                  <p>
+                    And one more data item to demonstrate the scrolling
+                    behavior.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 1</h3>
+                  <p>
+                    This is some sample content for data item 1. It can be quite
+                    long and will scroll within the content area.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 2</h3>
+                  <p>
+                    Here&aspo;s another data item with different content. The
+                    scrolling is contained within this area.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 3</h3>
+                  <p>
+                    And one more data item to demonstrate the scrolling
+                    behavior.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 1</h3>
+                  <p>
+                    This is some sample content for data item 1. It can be quite
+                    long and will scroll within the content area.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 2</h3>
+                  <p>
+                    Here&aspo;s another data item with different content. The
+                    scrolling is contained within this area.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 3</h3>
+                  <p>
+                    And one more data item to demonstrate the scrolling
+                    behavior.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 1</h3>
+                  <p>
+                    This is some sample content for data item 1. It can be quite
+                    long and will scroll within the content area.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 2</h3>
+                  <p>
+                    Here&aspo;s another data item with different content. The
+                    scrolling is contained within this area.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 3</h3>
+                  <p>
+                    And one more data item to demonstrate the scrolling
+                    behavior.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 1</h3>
+                  <p>
+                    This is some sample content for data item 1. It can be quite
+                    long and will scroll within the content area.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 2</h3>
+                  <p>
+                    Here&aspo;s another data item with different content. The
+                    scrolling is contained within this area.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 3</h3>
+                  <p>
+                    And one more data item to demonstrate the scrolling
+                    behavior.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 1</h3>
+                  <p>
+                    This is some sample content for data item 1. It can be quite
+                    long and will scroll within the content area.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 2</h3>
+                  <p>
+                    Here&aspo;s another data item with different content. The
+                    scrolling is contained within this area.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 3</h3>
+                  <p>
+                    And one more data item to demonstrate the scrolling
+                    behavior.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 1</h3>
+                  <p>
+                    This is some sample content for data item 1. It can be quite
+                    long and will scroll within the content area.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 2</h3>
+                  <p>
+                    Here&aspo;s another data item with different content. The
+                    scrolling is contained within this area.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 3</h3>
+                  <p>
+                    And one more data item to demonstrate the scrolling
+                    behavior.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 1</h3>
+                  <p>
+                    This is some sample content for data item 1. It can be quite
+                    long and will scroll within the content area.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 2</h3>
+                  <p>
+                    Here&aspo;s another data item with different content. The
+                    scrolling is contained within this area.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 3</h3>
+                  <p>
+                    And one more data item to demonstrate the scrolling
+                    behavior.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 1</h3>
+                  <p>
+                    This is some sample content for data item 1. It can be quite
+                    long and will scroll within the content area.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 2</h3>
+                  <p>
+                    Here&aspo;s another data item with different content. The
+                    scrolling is contained within this area.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 3</h3>
+                  <p>
+                    And one more data item to demonstrate the scrolling
+                    behavior.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 1</h3>
+                  <p>
+                    This is some sample content for data item 1. It can be quite
+                    long and will scroll within the content area.
+                  </p>
+                </div>
+                <div className="bg-card p-4 rounded-lg shadow">
+                  <h3 className="text-lg font-semibold mb-2">Data Item 2</h3>
+                  <p>
+                    Here&aspo;s another data item with different content. The
                     scrolling is contained within this area.
                   </p>
                 </div>
